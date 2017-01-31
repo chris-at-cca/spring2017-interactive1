@@ -13,21 +13,23 @@ h1 {
 }
 
 img {
-	max-width: 300px;
+	max-width: 50%;
 	height: auto;
 }
 
 #desktop {
-	width: calc(50vw - 100px);
-	padding: 50px;	
-	float: left;
+	width: 500px;
+	padding: 40px;
+	border: 1px solid red;
+
 }
 
 
 #phone {
-	width: calc(50vw - 100px);
-	padding: 50px;	
-	float: left;
+	width: 500px;
+	padding: 40px;	
+	border: 1px solid blue;
+
 }
 
 .sender {
