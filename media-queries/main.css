@@ -23,7 +23,7 @@ body {
 }
 
 #desktop {
-	transform: rotate(-10deg) translateX(-100px);
+	transform: rotate(-10deg) translateX(-200px);
 }
 
 #tablet, #mobile {
@@ -54,7 +54,7 @@ body {
 
 	#tablet{
 		opacity: 1;
-		transform: rotate(-10deg) translateX(0px);
+		transform: rotate(-10deg) translateX(-100px);
 	}
 
 	#desktop, #mobile {
@@ -76,7 +76,7 @@ body {
 
 	#mobile{
 		opacity: 1;
-		transform: rotate(-10deg) translateX(100px);
+		transform: rotate(-10deg) translateX(0px);
 
 	}
 
