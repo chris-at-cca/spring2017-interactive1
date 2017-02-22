@@ -22,6 +22,10 @@ body {
 
 }
 
+#desktop {
+	transform: rotate(-10deg) translateX(-100px);
+}
+
 #tablet, #mobile {
 	opacity: 0;
 }
@@ -50,6 +54,7 @@ body {
 
 	#tablet{
 		opacity: 1;
+		transform: rotate(-10deg) translateX(0px);
 	}
 
 	#desktop, #mobile {
@@ -71,6 +76,8 @@ body {
 
 	#mobile{
 		opacity: 1;
+		transform: rotate(-10deg) translateX(100px);
+
 	}
 
 	#desktop, #tablet {
