@@ -5,15 +5,14 @@
 
 body {
 	font-family: 'Space Mono', monospace;
-	color: red;
+	color: blue;
 	font-size: 20px;
 	font-weight: normal;
 }
 
-a { color: red; }
+/* this is a comment */
 
-a:hover { background: rgba(255,50,0,.25); }
-
+a { color: blue; }
 
 #container {
 	padding: 20px;
@@ -31,3 +30,4 @@ h1, h2, h3 {
 ul {
 	list-style-type: none;
 }
+
