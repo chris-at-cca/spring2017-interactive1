@@ -23,7 +23,7 @@ body {
 }
 
 #desktop {
-	transform: rotate(-10deg) translateX(-200px);
+	transform: rotate(-10deg) translateX(-20px);
 }
 
 #tablet, #mobile {
@@ -43,6 +43,20 @@ body {
 }
 
 /* iPad */
+
+
+@media (min-width: 1036px) and (max-width: 1040px) { 
+	body{ background: pink; }
+}
+@media (min-width: 1031px) and (max-width: 1035px) { 
+	body{ background: yellow; }
+}
+
+@media (min-width: 1025px) and (max-width: 1030px) { 
+	body{ background: green; }
+}
+
+
 @media (min-width: 668px) and (max-width: 1024px) { 
 	body {
 		background: orange;
