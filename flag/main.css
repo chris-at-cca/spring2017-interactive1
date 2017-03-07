@@ -1,0 +1,98 @@
+* { margin: 0px; padding: 0px; }
+
+body {
+	text-align: left;
+	font-family: helvetica;
+	color: black;
+	background: yellow;
+	transition: all 200ms ease;
+}
+
+/* flag outline */
+
+.flag {
+	width: 640px;
+	height: 320px;
+	background: white;
+	box-shadow: 0px 0px 3px rgba(0,0,0,.4);
+	margin: 50px auto;
+	position: relative;
+	transition: all 200ms ease;
+}
+
+/* japanese flag */
+
+#circle {
+	width: 150px;
+	height: 150px;
+	background: red;
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 75px);
+	border-radius: 75px;
+	transition: all 200ms ease;
+}
+
+/* irish flag */
+
+.stripe {
+	width: 33.3%;
+	float: left;
+	height: 320px;	
+}
+
+
+#stripe-1 {
+	background: green;	
+}
+
+#stripe-2 {
+	background: white;
+}
+
+#stripe-3 {
+	background: orange;
+}
+
+/* hover states */
+
+body:hover #japan {
+	transform: rotate(280deg) translateX(-100px) translateY(-150px);
+}
+
+body:hover #ireland {
+	transform: rotate(-520deg) translateX(120px) translateY(-170px);
+}
+
+
+/* media queries */
+
+@media (min-width: 375px) and (max-width: 667px) { 
+
+	body {
+		background: pink;
+	}
+
+	.flag{
+		width: 320px;
+		height: 160px;
+		margin: 50px auto;
+
+	}
+
+	#circle {
+		width: 75px;
+		height: 75px;
+		position: absolute;
+		top: calc(50% - 37.5px);
+		left: calc(50% - 37.5px);
+		border-radius: 37.5px;
+	}
+
+	.stripe {
+		height: 160px;	
+	}
+
+
+}
+
