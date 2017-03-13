@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Random Image Arrangement",
+  "version": "1.0",
+  "description": "Randomly arrange images on the page.",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "background": {
+    "scripts": ["event.js"],
+    "persistent": false
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"], //place your URL matches here https://developer.chrome.com/extensions/match_patterns
+      "css": ["style.css"]
+    }
+  ],
+  
+  "permissions": ["<all_urls>"]
+}
