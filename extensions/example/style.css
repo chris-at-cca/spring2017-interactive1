@@ -1,5 +1,5 @@
 .hide {
-  opacity: 0;
+  transform: scale(2);
 }
 
 .gradient {
@@ -8,5 +8,6 @@
 }
 
 .rotate {
-	transform: rotate(180deg);
+	transform: rotate(45deg) scale(2);
+
 }

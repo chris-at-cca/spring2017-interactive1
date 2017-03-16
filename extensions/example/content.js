@@ -4,7 +4,9 @@ $('img').attr('src', 'https://i.imgur.com/8QMMdNv.jpg');
 // replace text in the page when it loads
 $('body').children().each(function () {
 	// replace the '@' sign with a '$' sign
-	$(this).html( $(this).html().replace(/@/g,'$') );
+	$(this).html( $(this).html().replace(/Reuters/g,' ') );
+	$(this).html( $(this).html().replace(/@/g,' ') );
+
 });
 
 // when you click on an image hide it using CSS
@@ -19,6 +21,8 @@ $('body').click(function() {
 
 // rotate Google's logo
 $('#hplogo').addClass('rotate');
+
+$('#main').addClass('rotate');
 
 
 
