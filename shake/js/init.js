@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
     //create a new instance of shake.js.
     var myShakeEvent = new Shake({
@@ -13,8 +13,9 @@ $( document ).ready(function() {
 
     //shake event callback
     function shakeEventDidOccur () {
-
         //put your own code here etc.
-        $('body').toggleClass('show-screen2')
+        // we'll toggle a class on the body to hide and show a div
+        $('body').toggleClass('show-screen2');
     }
+    
 });

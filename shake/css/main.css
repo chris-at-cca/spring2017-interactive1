@@ -1,3 +1,9 @@
+/* reset padding and margin */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
 	background: red;
 	color: white;
@@ -6,6 +12,9 @@ body {
 	font-family: helvetica, arial, sans-serif;
 	text-align: center;
 	font-size: 22px;
+
+	min-height: 100vh;
+	min-width: 100vw;
 }
 
 #screen2 {
@@ -33,8 +42,8 @@ body {
 body.show-screen2 #screen2 {
 
 	/* show the element */
-	opacity: 0;
+	opacity: 1;
 
 	/* enable clicking while visible */
-	pointer-events: none;
+	pointer-events: all;
 }
