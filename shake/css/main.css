@@ -1,0 +1,40 @@
+body {
+	background: red;
+	color: white;
+	position: relative;
+
+	font-family: helvetica, arial, sans-serif;
+	text-align: center;
+	font-size: 22px;
+}
+
+#screen2 {
+	background: yellow;
+	color: black;
+
+	/* make this equal to the size of the window */
+	width: 100vw;
+	height: 100vh;
+
+	/* position this on top of screen1 */
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	/* hide the element by default */
+	opacity: 0;
+
+	/* prevent clicking while hidden */
+	pointer-events: none;
+
+}
+
+/* add this class to body on shake */
+body.show-screen2 #screen2 {
+
+	/* show the element */
+	opacity: 0;
+
+	/* enable clicking while visible */
+	pointer-events: none;
+}

@@ -15,6 +15,6 @@ $( document ).ready(function() {
     function shakeEventDidOccur () {
 
         //put your own code here etc.
-        alert('Shake!');
+        $('body').toggleClass('show-screen2')
     }
 });
