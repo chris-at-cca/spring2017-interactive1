@@ -8,12 +8,30 @@
 	<link rel="stylesheet" href="css/main.css" />	
 </head>
 <body>
-	<div id="screen1">
-		<p>this is the first screen – try shaking your phone.</p>
+	<!-- loading screen -->
+	<div id="loading" class="screen">
+
 	</div>
-	<div id="screen2">
+	
+	<!-- time screen -->
+	<div id="time" class="screen">
+		<p>this is the first screen – try shaking your phone.</p>
+		<div id="morning-link">morning</div>
+		<div id="noon-link">noon</div>
+	</div>
+
+	<!-- morning screen -->
+	<div id="morning" class="screen">
 		<p>this is the second screen – try shaking your phone again.</p>
 	</div>
+
+	<!-- noon screen -->
+	<div id="noon" class="screen">
+		<p>this is the third screen – try shaking your phone again.</p>
+	</div>	
+
+
+
 	<!-- my javascript -->
 	<script type="text/javascript" src="js/shake.js"></script>
 	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>

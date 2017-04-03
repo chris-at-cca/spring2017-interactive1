@@ -11,11 +11,22 @@ $(document).ready(function() {
     // register a shake event
     window.addEventListener('shake', shakeEventDidOccur, false);
 
+    n=1;
     //shake event callback
     function shakeEventDidOccur () {
         //put your own code here etc.
         // we'll toggle a class on the body to hide and show a div
-        $('body').toggleClass('show-screen2');
+        $('body').removeClass();
     }
+
+    // since you can't test shaking without uploading online, create another event to test your changes 
+    $('#morning-link').click(function(){
+        $('body').addClass('show-morning');   
+    });
+
+    $('#noon-link').click(function(){
+        $('body').addClass('show-noon');   
+    });
+
     
 });
