@@ -63,6 +63,7 @@ body {
 #time {
 	background: black;
 	color: white;
+	z-index: 10;	
 }
 
 /* you can style these links */
@@ -91,6 +92,8 @@ body {
     background-size: cover;
     background-position: center;
 
+	z-index: 100;
+
 }
 
 /* noon screen */
@@ -105,9 +108,34 @@ body {
 	/* prevent clicking while hidden */
 	pointer-events: none;
 
+	z-index: 100;
+}
+
+/* launch screen */
+
+#launch-screen {
+	background: yellow;
+	/* hide the element by default */
+	opacity: 0;
+	/* prevent clicking while hidden */
+	pointer-events: none;
+
+	z-index: 100;
+
 }
 
 /* hiding and showing screens */
+
+/* add this class to body on shake */
+body.show-launch #launch-screen {
+
+	/* show the element */
+	opacity: 1;
+
+	/* enable clicking while visible */
+	pointer-events: all;
+}
+
 
 
 /* add this class to body on shake */
